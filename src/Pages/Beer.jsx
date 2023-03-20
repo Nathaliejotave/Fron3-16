@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 
 //Esta pagina renderizará cada bebida de manera individual
 
 const Beer = () => {
     const [beer, setBeer] = useState([])
+
+    const navigate = useNavigate();
 
     /** 
     const getBeer = async()=>{
@@ -17,21 +20,19 @@ const Beer = () => {
         getBeer()
     })
     */
-  
-  
-  return (
+
+    return (
     <div>
-        <h2>Cerveza numero...</h2>
-        <div className='card'>
-            <img src={beer.image_url} alt="beer-detail" />
+    <h2>Cerveza numero...</h2>
+        <div className="card">
+        <img src={beer.image_url} alt="beer-detail" />
             <p>{beer.tagline}</p>
             <p>{beer.description}</p>
             <p>{beer.brewers_tips} </p>
         </div>
-        <button>Go back</button>
+        <button onClick={() => navigate(-1)}>Go back</button>
     </div>
-
-  )
-}
+    );
+};
 
 export default Beer
