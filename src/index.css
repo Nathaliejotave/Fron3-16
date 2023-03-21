@@ -16,7 +16,11 @@
 }
 
 
+.navbar{
+  display: flex;
+  justify-content: space-evenly;
 
+}
 
 nav{  
   display: flex;

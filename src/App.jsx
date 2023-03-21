@@ -15,7 +15,7 @@ import React from 'react'
         <Routes>
           <Route path={routes.home} element={<Home/>}>
           </Route>
-          <Route path={routes.contact} element={<Contacto/>}/>
+          <Route path={routes.contacto} element={<Contacto/>}/>
           <Route path={routes.beer} element={<Beer/>}/>
       </Routes>
     </div> 

@@ -1,7 +1,9 @@
-import React from 'react'
+import React ,{useState} from 'react'
 
 const Contacto = () => {
-  return (
+  const [Contacto, setContacto] = useState([])
+
+    return (
     <div className='grid'>
         <h2>¿Queres saber mas de nosotros?</h2>
         <h2>¿Sos revendedo y queres conocer precios mayoristas?</h2>
